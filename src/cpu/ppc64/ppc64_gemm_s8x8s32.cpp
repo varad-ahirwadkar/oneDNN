@@ -24,6 +24,8 @@ namespace impl {
 namespace cpu {
 namespace ppc64 {
 
+using namespace cpu::q10n;
+
 dnnl_status_t cblas_gemm_s8x8s32_ppc64(int ATflag, int BTflag,
         char const *offsetc, dim_t m, dim_t n, dim_t k, float alpha,
         int8_t const *A, dim_t lda, int8_t const *ao, uint8_t const *B,
